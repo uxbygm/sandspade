@@ -35,7 +35,7 @@ const writeLogsToFile = (logs) => {
 let commandLogs = readLogsFromFile();
 
 app.get("/api/folders", (req, res) => {
-  const folderPath = req.query.path
+  const folderPath = req.query.path;
 
   const resolvedPath = path.resolve(folderPath);
 
@@ -58,7 +58,7 @@ const runCommand = (cmd, description, email, resolvedPath, commandPath, commandS
         description,
         success: !error,
         output: stdout || stderr,
-        stderr: stderr, 
+        stderr: stderr,
         timestamp: new Date(),
         email: email,
         resolvedPath: resolvedPath,
@@ -100,6 +100,9 @@ app.post("/api/run-command", async (req, res) => {
       case "remove-node-modules":
         result = await runCommand(`rm -rf ${resolvedPath}/node_modules`, "Remove node_modules", email, resolvedPath, commandPath, commandStatus);
         break;
+      case "npm-init":
+        result = await runCommand(`npm init`, "Run npm init", email, resolvedPath, commandPath, commandStatus);
+        break;
       case "npm-install":
         result = await runCommand(`npm install`, "Run npm install", email, resolvedPath, commandPath, commandStatus);
         break;
@@ -116,7 +119,13 @@ app.post("/api/run-command", async (req, res) => {
         result = await runCommand(`git fetch --all && git reset --hard origin/main`, "Resync Git repo", email, resolvedPath, commandPath, commandStatus);
         break;
       default:
-        return res.status(400).json({ error: "Unknown action", email, resolvedPath, commandPath, commandStatus });
+        return res.status(400).json({
+          error: "Unknown action",
+          email,
+          resolvedPath,
+          commandPath,
+          commandStatus,
+        });
     }
 
     res.json(result);

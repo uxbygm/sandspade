@@ -117,6 +117,14 @@ function App() {
             </button>
           </div>
         )}
+        {!packageJsonInfo?.exists && (
+          <div>
+            <h3>Actions</h3>
+            <button onClick={() => runCommand("npm-init")} disabled={isRunningCommand}>
+              Run npm init
+            </button>
+          </div>
+        )}
         <h3>Actions</h3>
         <button disabled={isRunningCommand} onClick={() => runCommand("remove-node-modules")}>
           Remove node_modules
