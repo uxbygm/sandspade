@@ -1,24 +1,3 @@
 [
-  {
-    "description": "Run npm install",
-    "success": true,
-    "output": "\nup to date, audited 1 package in 139ms\n\nfound 0 vulnerabilities\n",
-    "stderr": "",
-    "timestamp": "2024-09-20T23:12:04.595Z",
-    "email": "gabe@uxbygm.com",
-    "resolvedPath": "/Users/gabriel.meacham/Documents/GitHub/sandspade/sampleprojects/Project1",
-    "commandPath": "../sampleprojects/Project1",
-    "commandStatus": "New"
-  },
-  {
-    "description": "Run npm audit",
-    "success": true,
-    "output": "found 0 vulnerabilities\n",
-    "stderr": "",
-    "timestamp": "2024-09-20T23:12:09.458Z",
-    "email": "gabe@uxbygm.com",
-    "resolvedPath": "/Users/gabriel.meacham/Documents/GitHub/sandspade/sampleprojects/Project1",
-    "commandPath": "../sampleprojects/Project1",
-    "commandStatus": "New"
-  }
+ 
 ]
