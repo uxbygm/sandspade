@@ -1,19 +1,19 @@
 {
   "name": "SandSpade: Command-Runner",
-  "description": "",
+  "description": "The Command Runner UI Tool is designed to streamline common development tasks by providing a simple, standardized user interface for executing frequently used terminal commands. This tool is intended to help developers maintain project environments by automating routine tasks like managing dependencies, cleaning up directories, and syncing code repositories.",
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "deps": "concurrently --names \"SERVER,UI\" --prefix-colors \"bgGreen.bold,bgCyan.bold\" \"npm run server:deps\" \"npm run ui:deps\"",
+    "start": "concurrently --names \"SERVER,UI\" --prefix-colors \"bgGreen.bold,bgCyan.bold\" \"npm run server\" \"npm run ui\"",
     "server": "cd command-runner && npm run start",
+    "server:deps": "cd command-runner && npm install",
     "ui": "cd command-runner/ui && npm run start",
-    "server:init": "cd command-runner && npm install",
-    "ui:init": "cd command-runner/ui && npm install"
-  },
-  "dependencies": {
+    "ui:deps": "cd command-runner/ui && npm install"
   },
   "devDependencies": {
+    "concurrently": "^9.0.1"
   },
   "author": "gabe@uxbygm.com",
   "license": "ISC"
 }
-
