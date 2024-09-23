@@ -1,0 +1,19 @@
+{
+  "name": "SandSpade: Command-Runner",
+  "description": "",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "server": "cd command-runner && npm run start",
+    "ui": "cd command-runner/ui && npm run start",
+    "server:init": "cd command-runner && npm install",
+    "ui:init": "cd command-runner/ui && npm install"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "author": "gabe@uxbygm.com",
+  "license": "ISC"
+}
+
