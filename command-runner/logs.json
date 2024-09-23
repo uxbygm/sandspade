@@ -1,3 +1,79 @@
 [
- 
+  {
+    "description": "Run npm audit",
+    "success": true,
+    "output": "found 0 vulnerabilities\n",
+    "stderr": "",
+    "timestamp": "2024-09-23T04:18:53.204Z",
+    "email": "dsdasd",
+    "resolvedPath": "C:\\Users\\gabe\\OneDrive\\Documents\\GitHub\\sandspade\\command-runner",
+    "commandPath": ".",
+    "commandStatus": "New"
+  },
+  {
+    "description": "Run npm install",
+    "success": true,
+    "output": "\nup to date, audited 66 packages in 956ms\n\n13 packages are looking for funding\n  run `npm fund` for details\n\nfound 0 vulnerabilities\n",
+    "stderr": "",
+    "timestamp": "2024-09-23T04:19:01.425Z",
+    "email": "dsdasd",
+    "resolvedPath": "C:\\Users\\gabe\\OneDrive\\Documents\\GitHub\\sandspade\\command-runner",
+    "commandPath": ".",
+    "commandStatus": "New"
+  },
+  {
+    "description": "Run npm install",
+    "success": true,
+    "output": "\nup to date, audited 1 package in 1s\n\nfound 0 vulnerabilities\n",
+    "stderr": "",
+    "timestamp": "2024-09-23T04:26:47.262Z",
+    "email": "dsdasd",
+    "resolvedPath": "C:\\Users\\gabe\\OneDrive\\Documents\\GitHub\\sandspade\\sampleprojects\\Project1",
+    "commandPath": "../sampleprojects/Project1",
+    "commandStatus": "New"
+  },
+  {
+    "description": "Run npm audit",
+    "success": true,
+    "output": "found 0 vulnerabilities\n",
+    "stderr": "",
+    "timestamp": "2024-09-23T04:26:51.989Z",
+    "email": "dsdasd",
+    "resolvedPath": "C:\\Users\\gabe\\OneDrive\\Documents\\GitHub\\sandspade\\sampleprojects\\Project1",
+    "commandPath": "../sampleprojects/Project1",
+    "commandStatus": "New"
+  },
+  {
+    "description": "Remove lock files",
+    "success": false,
+    "output": "rm: cannot remove 'C:\\Users\\gabe\\OneDrive\\Documents\\GitHub\\sandspade\\sampleprojects\\Project1/yarn.lock': No such file or directory\n",
+    "stderr": "rm: cannot remove 'C:\\Users\\gabe\\OneDrive\\Documents\\GitHub\\sandspade\\sampleprojects\\Project1/yarn.lock': No such file or directory\n",
+    "timestamp": "2024-09-23T04:26:56.898Z",
+    "email": "dsdasd",
+    "resolvedPath": "C:\\Users\\gabe\\OneDrive\\Documents\\GitHub\\sandspade\\sampleprojects\\Project1",
+    "commandPath": "../sampleprojects/Project1",
+    "commandStatus": "New"
+  },
+  {
+    "description": "Remove node_modules",
+    "success": true,
+    "output": "",
+    "stderr": "",
+    "timestamp": "2024-09-23T04:26:59.243Z",
+    "email": "dsdasd",
+    "resolvedPath": "C:\\Users\\gabe\\OneDrive\\Documents\\GitHub\\sandspade\\sampleprojects\\Project1",
+    "commandPath": "../sampleprojects/Project1",
+    "commandStatus": "New"
+  },
+  {
+    "description": "Run npm install",
+    "success": true,
+    "output": "\nup to date, audited 1 package in 709ms\n\nfound 0 vulnerabilities\n",
+    "stderr": "",
+    "timestamp": "2024-09-23T04:27:04.605Z",
+    "email": "dsdasd",
+    "resolvedPath": "C:\\Users\\gabe\\OneDrive\\Documents\\GitHub\\sandspade\\sampleprojects\\Project1",
+    "commandPath": "../sampleprojects/Project1",
+    "commandStatus": "New"
+  }
 ]
